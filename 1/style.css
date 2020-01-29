@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+html,body{
+  height: 100%;
+  width:100%;
+  font-family:'Poppins', sans-serif ;
+  color: #222;
+}
+.navbar{
+  padding: .8rem;
+
+}
+.navbar-nav li{
+  padding: 20px;
+}
+.nav-link{
+  font-size:1.1em !important;
+}
+.carousel-inner img{
+  height: 100%;
+  width: 100%;
+}
+.carousel-caption{
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%) ;
+}
+.carousel-caption h1{
+  font-size:500%;
+  text-transform:uppercase;
+  text-shadow:1px 1px 15px #000;
+}
+.carousel-caption h3{
+  font-size:200%;
+  font-weight:500;
+  text-shadow:1px 1px 10px black;
+  padding-bottom: 1rem;
+}
+.btn-primary{
+  background-color: #6648b1;
+  border:1px solid #6648b1;
+}
+.btn-primary:hover{
+  background-color: #563d7c;
+  border:1px solid #563d7c;
+}
+.jumbotron{
+  padding: 1rem;
+  border-radius:0;
+}
+.padding{
+  padding-bottom: 2rem;
+}
+.welcome{
+  width: 75%;
+  margin:0 auto;
+  padding-top:2rem;
+}
+.welcome hr{
+  border-top:2px solid #b4b4b4;
+  width:95%;
+  margin-top:.3rem;
+  margin-bottom: 1rem;
+}
+.fa-code{
+  color: #e54d26;
+}
+.fa-bold{
+  color:#563d7c
+}
+.fa-css3{
+  color:#2163af;
+}
+.fa-code,.fa-bold,.fa-css3{
+  font-size:4em;
+  margin:1em;
+}
+.fun{
+  width: 100%;
+  margin-bottom:2rem;
+}
+.gif{
+  max-width: 100%;
+}
+/*FLIP CARDS*/
+.flip-card {
+  background-color: transparent;
+  width: auto;
+  height: 50vh;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  color: black;
+}
+
+.flip-card-back {
+  color: black;
+  transform: rotateX(180deg);
+}
+
+
+/*BEST FLIP CARDS*/
+.my{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.back{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: rotateX(180deg);
+  backface-visibility: hidden;
+}
+.front{
+  backface-visibility: hidden;
+}
+.flip{
+  perspective: 1000px;
+}
+.flip:hover .my{
+  transform: rotateX(180deg);
+}
+.flip:hover{
+  padding-bottom: 2rem;
+}
+
+
+
+.fa-facebook,.fa-facebook:hover{
+  color:#3b5998;
+}
+.fa-twitter,.fa-twitter:hover{
+color: #00aced;
+}
+.fa-google-plus-g,.fa-google-plus-g:hover{
+  color: #dd4b39;
+}
+.fa-instagram,.fa-instagram:hover{
+  color: #517fa8;
+}
+.fa-youtube,.fa-youtube:hover{
+  color: red;
+}
+footer{
+background-color: #3f3f3f;
+padding-top: 2rem;
+ color:#d5d5d5;
+}
+hr.light{
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top:.8rem ;
+  margin-bottom: 1rem;
+}
+
+
+/*SNAKE BORDER ANIMATION */
+.social ul li{
+  list-style: none;
+}
+.box.flex {
+  display: flex;
+  justify-content: center;
+}
+.social ul li a{
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size:200%;
+  text-align: center;
+  text-decoration: none;
+  transition: .5s;
+  margin:0 10px;
+}
+.social ul li a span{
+  position: absolute;
+  transition: transform .5s;
+}
+.social ul li a span:nth-child(1),
+.social ul li a span:nth-child(3){
+  width: 100%;
+  height: .1rem;
+  background: #262626;
+}
+.social ul li a span:nth-child(1){
+  top: 0;
+  left: 0;
+  transform-origin: right;
+}
+.social ul li a:hover span:nth-child(1){
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .5s;
+}
+
+.social ul li a span:nth-child(3){
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
+}
+.social ul li a:hover span:nth-child(3){
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .5s;
+}
+
+.social ul li a span:nth-child(2),
+.social ul li a span:nth-child(4){
+  width: .1rem;
+  height: 100%;
+  background: #262626;
+}
+.social ul li a span:nth-child(2){
+  top: 0;
+  left: 0;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+.social ul li a:hover span:nth-child(2){
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform .5s;
+}
+
+.social ul li a span:nth-child(4){
+  top: 0;
+  right: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+.social ul li a:hover span:nth-child(4){
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform .5s;
+}
+
+/*3D LAYERED ICONS*/
+.social1 ul{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.social1 ul li{
+  position: relative;
+  list-style: none;
+  margin: 20px 30px;
+  margin-top: 50px;
+  width: 60px;
+  height: 60px;
+  transform: rotate(-30deg) skew(25deg);
+
+}
+.social1 ul li span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+  background: black;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px !important;
+}
+.social1 ul li:hover span:nth-child(5){
+  transform: translate(40px,-40px);
+  opacity: 1;
+}
+.social1 ul li:hover span:nth-child(4){
+  transform: translate(30px,-30px);
+  opacity: .8;
+}
+.social1 ul li:hover span:nth-child(3){
+  transform: translate(20px,-20px);
+  opacity: .6;
+}
+.social1 ul li:hover span:nth-child(2){
+  transform: translate(10px,-10px);
+  opacity: .4;
+}
+.social1 ul li:hover span:nth-child(1){
+  transform: translate(0,0);
+  opacity: .2;
+}
+.social1 .fa-facebook,.social1 .fa-facebook:hover{
+  color:white;
+}
+.social1 .fa-twitter,.social1 .fa-twitter:hover{
+color:white;
+}
+.social1 .fa-google-plus-g,.social1 .fa-google-plus-g:hover{
+  color:white;
+}
+.social1 .fa-instagram,.social1 .fa-instagram:hover{
+  color:white;
+}
+.social1 .fa-youtube,.social1 .fa-youtube:hover{
+  color:white;
+}
+hr.light-100{
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top:.8rem ;
+  margin-bottom: 1rem;
+}
+
+/*---Media Queries --*/
+@media (max-width: 768px) {
+  .carousel-caption{
+    top:45%; ;
+  }
+  .carousel-caption h1{
+    font-size:350%;
+  }
+  .carousel-caption h3{
+    font-size:140%;
+    font-weight:400;
+    padding-bottom: .2rem;
+  }
+  .carousel-caption .btn{
+    font-size: 95%;
+    padding: 8px 14px;
+  }
+  .display-4{
+    font-size: 200%;
+  }
+}
+@media (max-width:633px){
+  .social1 ul li span{
+    font-size: 25px!important;
+  }
+  .social1 ul li{
+    height: 37px;
+    width: 37px;
+  }
+}
+@media (max-width: 576px) {
+  .carousel-caption{
+    top:40%; ;
+  }
+  .carousel-caption h1{
+    font-size:250%;
+  }
+  .carousel-caption h3{
+    font-size:110%;
+  }
+  .carousel-caption .btn{
+    font-size: 90%;
+    padding: 4px 8px;
+  }
+  .carousel-indicators{
+    display: none;
+  }
+  .display-4{
+    font-size: 160%;
+  }
+  .back h1{
+    font-size: 26px;
+  }
+  .back p{
+    font-size: 16px;
+    white-space: pre-wrap;
+  }
+}
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
