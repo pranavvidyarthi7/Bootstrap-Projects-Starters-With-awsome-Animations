@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Josefin Sans:400,500,700');
+h1,h2,h3,h4,h5,h6{
+    font-family:'Poppins';
+}
+p{
+    font-family:'Roboto';
+}
+.navbar{
+  border:0;
+  font-family:'Poppins';
+}
+.navbar-brand{
+  font-size: 20px;
+  color:black!important;
+  font-weight: bold;
+}
+body{
+  margin-top:70px;
+  font-size: 16px;
+}
+#home h1{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+#home img{
+  width:100%;
+  height: auto;
+  margin-left:0;
+}
+#home .home-right{
+  margin-top:50px;
+}
+#testimonial{
+  background: lightgrey;
+  padding: 50px 0 30px 0;
+  text-align:center;
+  margin-top: 40px;
+}
+#testimonial p{
+  font-size: 32px;
+    font-family: "Josefin Sans";
+    color:black;
+}
+#testimonial p .customer{
+  font-size: 20px;
+  color:#666;
+}
+#about .about-right{
+  margin-top: 90px;
+}
+#services{
+  margin: 20px 0 60px 0;
+}
+#contact{
+  background:url('img/computers.png');
+  padding: 40px;
+  color:white;
+  border-top: darkgrey 7px solid;
+  border-bottom: darkgrey 7px solid;
+}
+footer{
+  padding: 30px;
+
+}

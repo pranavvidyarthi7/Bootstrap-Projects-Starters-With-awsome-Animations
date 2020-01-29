@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target="#navbarResponsive">
+	<div id="home1">
+  <br><br><br>
+	</div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  	<div class="container-fluid">
+  		<a href="#" class="navbar-brand">
+  		<img src="img/nuno.png" alt="logo">
+  	  </a>
+  		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
+  			<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<div class="collapse navbar-collapse" id="navbarResponsive">
+  			<ul class="navbar-nav ml-auto">
+  				<li class="nav-item ">
+  					<a href="#home1" class="nav-link active">Home</a>
+  				</li>
+  				<li class="nav-item">
+  					<a href="#about" class="nav-link">About</a>
+  				</li>
+  				<li class="nav-item">
+  					<a href="#service" class="nav-link">Services</a>
+  				</li>
+  				<li class="nav-item">
+  					<a href="#Connect" class="nav-link">Connect</a>
+  				</li>
+  			</ul>
+  		</div>
+  	</div>
+
+  </nav>
+<section id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <div class="home-left">
+          <img src="img/apple.png" >
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <div class="home-right">
+          <h1>Hands Free help</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+        <br>
+        <a href="#" class="btn btn-lg btn-default home-btn">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonial">
+  <div class="container">
+    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"</p>
+    <p class="customer">- John Doe</p>
+  </div>
+</section>
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <div class="about-left">
+          <img src="img/" alt="">
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <div class="about-right">
+          <h2>Get to know google</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex </p>
+          <br>
+          <a href="#" class="btn btn-default btn-lg" id="service">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<section id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <div class="about-left">
+          <h1>Services1</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <div class="about-right">
+          <h2>Services2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex </p>
+          <br id="Connect">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-5">
+        <form>
+          <label for="username">Enter your username:</label>
+          <input type="text" id="username" name="username" placeholder="username">
+        <br><br> <label for="email">Enter your email:</label>
+       <input type="email" id="email" name="email" placeholder="email">
+        <br><br> <label for="password">Enter your password</label>
+      <br><br><input type="password" id="password" name="password" placeholder="password">
+        <p>Select your age:</p>
+        <input type="radio" name="age" id="op-1" value="0-25">
+         <label for="op-1">0-25</label>
+         <input type="radio" name="age" id="op-2" value="26-50">
+          <label for="op-2">26-50</label>
+          <input type="radio" name="age" id="op-3" value="51-75">
+           <label for="op-3">51-75</label>
+           <input type="radio" name="age" id="op-4" value=">75">
+            <label for="op-4">More than 75</label>
+            <br><br>
+             <label for="question">Security question</label>
+             <select name="question" id="question">
+               <option value="q1">What is your favorite colour?</option>
+               <option value="q2">Which is your birth city?</option>
+               <option value="q3">What is your pet name?</option>
+             </select>
+             <br><br>
+             <label for="answer">Security Question</label>
+             <input type="text" name="answer" id="answer" >
+             <br><br>
+             Enter your bio:
+             <br><br>
+             <label for="bio">Enter your bio:</label><br>
+             <textarea name="bio" id="bio" rows="8" cols="80" placeholder="About you..."></textarea>
+      <br><br>
+      <input type="submit"  value="submit the form">
+        </form>
+      </div>
+      <div class="col-md-7 col-sm-7">
+
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+<p class="text-center">TextScroll Copyright &copy;2017</p>
+</footer>
+<script>
+  window.sr = ScrollReveal();
+  sr.reveal('.navbar', {
+    duration: 2000,
+    origin:'bottom'
+  });
+	sr.reveal('.home-left', {
+    duration: 2000,
+    origin:'top',
+		distance:'300px'
+  });
+	sr.reveal('.home-right', {
+    duration: 2000,
+    origin:'right',
+		distance:'300px'
+  });
+	sr.reveal('.home-btn', {
+    duration: 2000,
+    origin:'bottom',
+		delay:2000
+  });
+	sr.reveal('#testimonial div', {
+    duration: 2000,
+    origin:'bottom',
+  });
+	sr.reveal('.about-left', {
+    duration: 2000,
+    origin:'left',
+		distance:'300px',
+		viewFactor:.2
+  });
+	sr.reveal('.about-right', {
+    duration: 2000,
+    origin:'right',
+		distance:'300px',
+		viewFactor:.2
+  });
+</script>
+<script>
+$(function() {
+	// Smooth Scrolling
+	$('a[href*="#"]:not([href="#"])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				$('html, body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			}
+		}
+	});
+});
+</script>
+</body>
+</html>
